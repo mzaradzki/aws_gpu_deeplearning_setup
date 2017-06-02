@@ -16,7 +16,7 @@ Once logged into the EC2 instance:
 - to check CUDA version : $ nvcc --version
 
 
-To fix some cudann error message you may have to do this (see stackoverlfow):
+To fix some cudann error message you may have to do this (see stackoverlfow at https://stackoverflow.com/questions/36159194/tensorflow-libcudart-so-7-5-cannot-open-shared-object-file-no-such-file-or-di):
 - $ export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64"
 - $ export CUDA_HOME=/usr/local/cuda-8.0
 - $ source ~/.profile
