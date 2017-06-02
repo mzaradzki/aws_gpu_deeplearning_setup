@@ -16,4 +16,23 @@ Once logged into the EC2 instance:
 - to check CUDA version : $ nvcc --version
 
 
+To fix some cudann error message you may have to do this (see stackoverlfow):
+- $ export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64"
+- $ export CUDA_HOME=/usr/local/cuda-8.0
+- $ source ~/.profile
+
+
 By default the Jupyter notebook password will be : dl_course
+
+The latest version of Keras 1 (as of today)
+$ pip install keras==1.2.2
+
+
+Update .keras/keras.json to use tensorflow backend
+
+
+$conda create -n py35_kr_tf python=3.5 anaconda
+$ source activate py35_kr_tf
+$ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.1.0-cp35-cp35m-linux_x86_64.whl
+$ (conda install -c conda-forge keras=1.2.2) or (pip install keras==1.2.2)
+$ source deactivate
