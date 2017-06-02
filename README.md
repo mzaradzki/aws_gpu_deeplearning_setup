@@ -22,6 +22,10 @@ To fix some cudann error message you may have to do this (see stackoverlfow at h
 - $ source ~/.profile
 
 
+With PyTorch on python 3.5 you may have a numpy.core.multiarray (see https://github.com/tensorflow/tensorflow/issues/559) error:
+- $ conda install -c conda-forge numpy
+
+
 By default the Jupyter notebook password will be : dl_course
 
 The latest version of Keras 1 (as of today)
