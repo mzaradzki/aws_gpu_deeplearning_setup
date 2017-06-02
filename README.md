@@ -13,3 +13,6 @@ alias aws-ssh='ssh -i ~/.ssh/aws-key-fast-ai.pem ubuntu@$instanceIp'
 Once logged into the EC2 instance:
 - to check GPU is setup correctly use the command : $ nvidia-smi
 - to keep track of your history use the command : $ sudo rm .bash_history
+
+
+By default the Jupyter notebook password will be : dl_course
